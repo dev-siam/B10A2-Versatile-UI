@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --Text-01: #fff;
+  --Text-02: #efede8a6;
+  --Dark-03: #727272;
+  --section-bg: #222;
+  --card-bg: #ffffff1a;
+  --btn-bg: #e6533c;
+}
+img {
+  width: 100%;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--Text-01);
+}
+
+h1 {
+  color: #fff;
+  font-size: 78px;
+  font-weight: 900;
+  line-height: 120%;
+  text-align: left;
+}
+h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 120%; /* 57.6px */
+}
+h3 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 120%; /* 33.6px */
+}
+h4 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 120%; /* 24px */
+}
+h5 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 120%; /* 24px */
+}
+h6 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 120%; /* 24px */
+}
+p {
+  color: var(--Text-02);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+.title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%; /* 21.6px */
+}
+.description {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.3px;
+}
+.list-item {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 120%; /* 27.6px */
+}
+button {
+  display: flex;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 42px;
+  background: #e6533c;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 122.222% */
+  border: none;
+}
+.btn-secondary {
+  background: none;
+  border-radius: 42px;
+  border: 1px solid #fff;
+}
+
+/* img:hover {
+  transform: scale(1.01);
+  transition: 0.5s ease-in-out;
+} */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  text-align: center;
+}
+
+/* ======================== */
+/* Heading Section start */
+
+header {
+  background: linear-gradient(180deg, #111 0%, rgb(60, 60, 60) 100%);
+  /* background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%); */
+  text-align: center;
+  padding-top: 55px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #e6533c;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 120%; /* 43.2px */
+}
+.nav-list ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.nav-list ul li {
+  display: flex;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 46px;
+}
+.nav-span {
+  font-family: inherit;
+  background: #e6533c;
+}
+.heading-span {
+  font-family: "Dancing Script", cursive;
+}
+
+.hamburger-icon {
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+/* =========Bannner Section=============== */
+.banner-section {
+  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.text-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.text-div h1 {
+  text-align: left;
+}
+.btn-div {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-div {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  justify-content: center;
+  align-items: end;
+  height: 100%;
+}
+
+.img-div .image {
+  width: 349px;
+  height: 580px;
+  flex-shrink: 0;
+}
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  width: fit-content;
+}
+.card h3,
+p {
+  text-align: start;
+}
+.card p {
+  font-size: 14px;
+}
+.card-1 {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+.card-2 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  bottom: 15%;
+  left: 5%;
+}
+.card-2 .circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--btn-bg);
+  margin: 12px;
+}
+
+/* ========================== */
+/* =======Mobile============== */
+
+@media screen and (max-width: 576px) {
+  .nav-list {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .banner-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .text-div {
+    justify-content: center;
+  }
+  .text-div h1 {
+    font-size: 36px;
+    text-align: left;
+  }
+  .text-div p{
+    text-align: center;
+  }
+  button {
+    font-size: 16px;
+    padding: 16px 20px;
+  }
+  .card {
+    padding: 10px;
+  }
+  .card h3 {
+    font-size: 28px;
+  }
+  .card-1 {
+    position: absolute;
+    top: -5%;
+    right: 1%;
+  }
+
+  /* =========Header Section done========== */
+
+
+
+}
+
+/* ============================  */
+/* ========Tablet==============  */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+  .hamburger-icon {
+    display: none;
+  }
+  .banner-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  /* =========Header Section done========== */
+
+ 
+ 
+}
+/* ============================  */
+/* =========Laptop=============  */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+/* ============================  */
+/* =========Desktop=============  */
+
+@media screen and (min-width: 1024) {
+}
