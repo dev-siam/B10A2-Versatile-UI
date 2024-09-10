@@ -63,7 +63,7 @@ h4 {
 h5 {
   color: #fff;
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 120%; /* 24px */
 }
 h6 {
@@ -392,6 +392,51 @@ p {
 
 
 
+.team-div{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3,1fr);
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.team-div .team-img{
+    height: 200px;
+    border-radius: 18px;
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 10px 10px;
+    background-color: rgba(61, 65, 65, 0.349);
+}
+
+.team-1{
+  background-image: url("../images/trainer1.png");
+}
+.team-2{
+  background-image: url("../images/trainer2.png");
+}
+.team-3{
+  background-image: url("../images/trainer3.png");
+}
+.team-4{
+  background-image: url("../images/trainer4.png");
+}
+.team-5{
+  background-image: url("../images/trainer5.png");
+}
+.team-6{
+  background-image: url("../images/trainer6.png");
+}
 
 
 
@@ -469,7 +514,9 @@ p {
   display: none;
 }
 /* =======End Trainings Exercises=====================  */
-
+.team-div{
+  grid-template-columns: repeat(1,1fr);
+}
 
 
 
@@ -519,7 +566,9 @@ p {
   grid-template-columns: repeat(3, 1fr);
 }
 /* =======End Trainings Exercises=====================  */
- 
+ .team-div{
+  grid-template-columns: repeat(2,1fr);
+}
 
 
 
