@@ -192,37 +192,34 @@ nav {
   padding-top: 32px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   gap: 100px;
 }
-.text-div {
+.banner-text-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  align-items: flex-start;
   gap: 28px;
 }
-.text-div h1 {
-  text-align: left;
-}
+
 .btn-div {
   display: flex;
   gap: 14px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.img-div {
+.banner-img-div {
   position: relative;
   display: flex;
-  justify-content: end;
   justify-content: center;
   align-items: end;
   height: 100%;
 }
 
-.img-div .image {
+.banner-img-div .image {
   width: 349px;
   height: 580px;
   flex-shrink: 0;
@@ -339,7 +336,7 @@ p {
 
 
 
-/* ========================== */
+/* =======ResponSIve Strat=================== */
 /* =======Mobile============== */
 /* ============================  */
 @media screen and (max-width: 576px) {
@@ -352,16 +349,12 @@ p {
   .banner-section {
     grid-template-columns: repeat(1, 1fr);
   }
-  .text-div {
-    justify-content: center;
-  }
-  .text-div h1 {
+  
+  .banner-text-div h1 {
     font-size: 36px;
-    text-align: left;
+    
   }
-  .text-div p{
-    text-align: center;
-  }
+  
   button {
     font-size: 16px;
     padding: 16px 20px;
@@ -491,4 +484,8 @@ p {
 /* =========Desktop=============  */
 /* ============================  */
 @media screen and (min-width: 1024) {
+
+
+
+  
 }
