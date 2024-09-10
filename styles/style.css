@@ -127,7 +127,7 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
   text-align: center;
 }
 body{
@@ -195,6 +195,7 @@ nav {
   /* justify-content: space-between; */
   align-items: center;
   gap: 100px;
+  
 }
 .banner-text-div {
   display: flex;
@@ -217,6 +218,7 @@ nav {
   justify-content: center;
   align-items: end;
   height: 100%;
+  /* ==================== */
 }
 
 .banner-img-div .image {
@@ -447,6 +449,83 @@ p {
 
 
 
+/* =======Start Footer ============== */
+
+footer{
+  background: rgba(255, 255, 255, 0.10);
+  
+}
+.main-footer{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+  padding: 70px 0;
+}
+.fitness{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.fitness h2{
+  color: #E6533C;
+font-size: 70px;
+font-style: italic;
+font-weight: 800;
+line-height: 120%; /* 84px */
+text-align: left;
+}
+.links{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+}
+.links ul{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.links p{
+  font-weight: 700;
+  font-size: 32px;
+  color: white;
+  line-height: 120%;
+
+}
+.links ul li a{
+  color: rgba(255, 255, 255, 0.50);
+font-size: 18px;
+font-weight: 400;
+
+
+}
+
+hr {
+  border: none;
+  height: 1px; /* Adjust the height as needed */
+  background-color: #727272;
+}
+.copyright{
+  display: flex;
+  justify-content: center;
+  /* margin: 35px 0; */
+}
+.copyright p{
+  color: rgba(255, 255, 255, 0.50);
+font-size: 18px;
+font-weight: 400;
+line-height: 24px; /* 120% */
+letter-spacing: 0.3px;
+padding: 35px;
+}
+
+
+
+
+
+
+
+
 
 /* =======ResponSIve Strat=================== */
 /* =======Mobile============== */
@@ -480,7 +559,7 @@ p {
   .card-1 {
     position: absolute;
     top: -7%;
-    right: 1%;
+    right: 20%;
   }
 
   /* =========Header Section done========== */
@@ -519,6 +598,18 @@ p {
 }
 
 
+/* =======Start Footer=====================  */
+
+.main-footer{
+  display: grid;
+  grid-template-columns:  1fr;
+  gap: 30px;
+  padding: 70px 0;
+}
+/* .links, .links p,.fitness p, .fitness h2{
+ text-align: center;
+} */
+ 
 
 }
 
@@ -570,6 +661,29 @@ p {
   grid-template-columns: repeat(2,1fr);
 }
 
+
+/* =======Start Footer=====================  */
+
+.main-footer{
+  
+  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: 1fr 1fr; 
+  gap: 30px;
+  padding: 70px 0;
+  justify-content: center;
+  align-items: center;
+}
+.fitness{
+  grid-column-start: 0;
+  grid-column-end: span 2;
+  justify-content: center;
+  align-items: center;
+}
+/* .links, .links p,.fitness p{
+ text-align: center;
+} */
 
 
 
