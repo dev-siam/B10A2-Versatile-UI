@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.cdnfonts.com/css/miama');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   margin: 0;
@@ -37,13 +39,14 @@ h1 {
   font-size: 78px;
   font-weight: 900;
   line-height: 120%;
-  text-align: left;
+  text-align: canter;
 }
 h2 {
   color: #fff;
   font-size: 48px;
   font-weight: 900;
   line-height: 120%; /* 57.6px */
+  text-align: left;
 }
 h3 {
   color: #fff;
@@ -66,7 +69,7 @@ h5 {
 h6 {
   color: #fff;
   font-size: 18px;
-  font-weight: 900;
+  font-weight: 600;
   line-height: 120%; /* 24px */
 }
 p {
@@ -107,7 +110,7 @@ button {
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 22px; /* 122.222% */
   border: none;
 }
@@ -124,18 +127,22 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 30px;
   text-align: center;
+}
+body{
+  background: #000;
 }
 
 /* ======================== */
 /* Heading Section start */
 
 header {
-  background: linear-gradient(180deg, #111 0%, rgb(60, 60, 60) 100%);
   /* background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0.00) 100%); */
+  background-image: linear-gradient(rgb(0, 0, 0), #222222, rgb(0, 0, 0));
   text-align: center;
   padding-top: 55px;
+  
 }
 
 nav {
@@ -164,11 +171,14 @@ nav {
   border-radius: 46px;
 }
 .nav-span {
-  font-family: inherit;
   background: #e6533c;
 }
+.nav-list ul li:hover{
+  border: 1px solid #e6533c;
+}
 .heading-span {
-  font-family: "Dancing Script", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: 'Miama', sans-serif;
 }
 
 .hamburger-icon {
@@ -253,9 +263,85 @@ p {
   margin: 12px;
 }
 
+/* Change Your Habits */
+.change-habit{
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 58px;
+}
+.change-habit .text-div p{
+  text-align: center;
+}
+.change-habit .img-box-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.img-box{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.img-box img{
+  border-radius: 50%;
+}
+.img-box div p{
+ text-align: center;
+ font-size: 14px;
+}
+
+/* ========================== */
+/* Run an Extra Mile */
+
+
+.run-extra-div{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 30px 50px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  align-self: stretch;
+  border-radius: 18px;
+  background: #222;
+}
+
+.run-extra-div .run-text-div p{
+  margin: 14px 0 34px 0;
+}
+.run-extra-div .run-text-div button{
+  padding: 16px 80px;
+
+}
+
+.run-extra-div .run-img-div img{
+  border-radius: 18px;
+}
+/* =======Run an Extra Mile Done=======  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ========================== */
 /* =======Mobile============== */
-
+/* ============================  */
 @media screen and (max-width: 576px) {
   .nav-list {
     display: none;
@@ -293,13 +379,43 @@ p {
   }
 
   /* =========Header Section done========== */
+  .change-habit .img-box-div{
+    flex-direction: column;
+  }
+  /* =========Change Your Habits Section done========== */
+
+  .run-extra-div{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 30px ;
+
+  }
+  .run-text-div button{
+    width: 100%;
+  }
+/* =======Run an Extra Mile Done=======  */
+
+
+
 
 
 
 }
 
+
+
+
+
+
+
+
+
+
+
 /* ============================  */
 /* ========Tablet==============  */
+/* ============================  */
 @media screen and (min-width: 576px) and (max-width: 768px) {
 
   .hamburger-icon {
@@ -308,19 +424,71 @@ p {
   .banner-section {
     grid-template-columns: repeat(1, 1fr);
   }
-  
+
   /* =========Header Section done========== */
+  .change-habit .img-box-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  /* =========Change Your Habits Section done========== */
+ .run-extra-div{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    justify-content: center;
+    padding: 30px ;
+
+  }
+  .run-text-div button{
+    width: 100%;
+  }
+/* =======Run an Extra Mile Done=====================  */
 
  
- 
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
 /* ============================  */
 /* =========Laptop=============  */
-
+/* ============================  */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .run-extra-div{
+    gap: 50px;
+  }
+/* =======Run an Extra Mile Done=====================  */
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ============================  */
 /* =========Desktop=============  */
-
+/* ============================  */
 @media screen and (min-width: 1024) {
 }
