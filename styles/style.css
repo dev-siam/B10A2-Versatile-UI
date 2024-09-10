@@ -261,7 +261,7 @@ p {
 }
 
 /* Change Your Habits */
-.change-habit{
+.change-habit, .training{
   margin: 100px auto;
   display: flex;
   flex-direction: column;
@@ -318,10 +318,77 @@ p {
 }
 /* =======Run an Extra Mile Done=======  */
 
+/* Trainings and Exercises start */
+.titles{
+  display: grid;
+  gap: 14px;
+}
+.training-text-div{
+  justify-content: center;
+  align-items: center;
+}
+.training-text-div p,h2{
+  text-align: center;
+}
+.training-img-div{
+  display: grid;
+  gap: 0;
+}
 
+.training-img-div .img-div-1{
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr;  
+}
+.training-img-div .img-div-2{
+  display: grid;
+  grid-template-columns: 3fr 3fr 4fr;  
+}
 
+.training-img{
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    position: center;
+    height: 200px;
+    display: flex;
+}
+.training-img p{
+  font-weight: 400;
+    font-size: 14px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 
+.img-1{
+  background-image: url("../images/exercise1.jpg");
+  background-color: rgba(0, 255, 255, 0.349);
+}
+.img-2{
+  background-image: url("../images/exercise2.png");
+  background-color: rgba(167, 49, 69, 0.479);
+}
+.img-3{
+  background-image: url("../images/exercise3.png");
+  background-color: rgba(72, 77, 77, 0.589);
+}
+.img-4{
+  background-image: url("../images/exercise4.png");
+  background-color: rgba(61, 35, 35, 0.651);
+}
+.img-5{
+  background-image: url("../images/exercise5.jpg");
+  background-color: rgba(49, 161, 58, 0.596);
+}
+.img-6{
+  background-image: url("../images/exercise6.jpg");
+  background-color: rgba(50, 117, 180, 0.658);
+}
 
+/* =======End Trainings Exercises=====================  */
 
 
 
@@ -388,8 +455,20 @@ p {
     width: 100%;
   }
 /* =======Run an Extra Mile Done=======  */
-
-
+.training-img-div{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;  
+}
+.training-img-div .img-div-1,
+.training-img-div .img-div-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;  
+}
+.img-3, .img-6{
+  display: none;
+}
+/* =======End Trainings Exercises=====================  */
 
 
 
@@ -435,7 +514,11 @@ p {
     width: 100%;
   }
 /* =======Run an Extra Mile Done=====================  */
-
+.training-img-div .img-div-1,
+.training-img-div .img-div-2{
+  grid-template-columns: repeat(3, 1fr);
+}
+/* =======End Trainings Exercises=====================  */
  
 
 
@@ -451,6 +534,7 @@ p {
 
 
 
+/* ============================  */
 /* ============================  */
 /* =========Laptop=============  */
 /* ============================  */
