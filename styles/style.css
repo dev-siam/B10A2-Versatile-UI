@@ -204,7 +204,9 @@ nav {
   align-items: flex-start;
   gap: 28px;
 }
-
+.banner-text-div {
+ overflow: hidden;
+}
 .btn-div {
   display: flex;
   gap: 14px;
