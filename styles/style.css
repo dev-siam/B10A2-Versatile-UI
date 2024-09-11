@@ -523,15 +523,9 @@ input,select{
 }    
 /* end BMI Calculator */
 
-.extraboxess {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
+
 .ExtraContainer{
-  
   padding: 0 20px;
-  
 }
 .extraboxess{
   display: flex;
@@ -746,14 +740,14 @@ h2{
   font-size: 30px;
 }
 
-}
-
-
 .extraboxess {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
+  flex-direction: column;
 }
+
+}
+
+
+
 
 
 
@@ -824,13 +818,13 @@ h2{
  text-align: center;
 } */
 
+/* .extraboxess {
+    flex-direction: column;
+} */
+
 .extraboxess {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3,1fr);
+  flex-direction: column;
 }
-
-
 
 }
 
